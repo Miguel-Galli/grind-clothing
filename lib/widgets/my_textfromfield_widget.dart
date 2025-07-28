@@ -22,7 +22,7 @@ class MyTextfromfieldWidget extends StatelessWidget {
           hintText: hintText,
           border: OutlineInputBorder(
             borderSide: BorderSide.none,
-            borderRadius: BorderRadius.circular(1),
+            borderRadius: BorderRadius.circular(5),
           ),
 
         ),
