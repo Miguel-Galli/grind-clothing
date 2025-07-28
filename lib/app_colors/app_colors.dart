@@ -19,4 +19,6 @@ class AppColors {
   static const baseGrey10Color = Color(0xfff6f6f6);
   static const baseWhiteColor = Color(0xffffffff);
   static const baseWhite60Color = Color(0xfff6f6f6);
+  static const baseGreenMilitaryColor = Color(0xff3e4a3e);
+
 }
