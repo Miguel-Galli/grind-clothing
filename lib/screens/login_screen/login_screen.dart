@@ -1,4 +1,5 @@
 import 'package:ecommerce_app/app_colors/app_colors.dart';
+import 'package:ecommerce_app/screens/home_page/home_page.dart';
 import 'package:ecommerce_app/styles/login_screen_styles.dart';
 import 'package:ecommerce_app/widgets/my_button_widget.dart';
 import 'package:ecommerce_app/widgets/my_textfromfield_widget.dart';
@@ -40,7 +41,12 @@ class _LoginScreenState extends State<LoginScreen> {
                   child: MyButtonWidget(
                   text: "Sign in",
                   color: AppColors.baseBlackColor,
-                  onPress: () {}
+                  onPress: () {
+                    PageRouting.goToNextPage(
+                      context: context,
+                      navigateTo: HomePage(),
+                    );
+                  }
               )
               ),
               SizedBox(
