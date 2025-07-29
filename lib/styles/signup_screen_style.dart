@@ -27,5 +27,10 @@ class SignupScreenStyle{
     color: AppColors.baseBlackColor,
   );
 
+  static const TextStyle signUpTextStyle = TextStyle(
+    color: AppColors.baseBlackColor,
+    fontSize: 20,
+  );
+
 
 }

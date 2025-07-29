@@ -107,9 +107,32 @@ class SignupScreen extends StatelessWidget {
                     child: SvgPicture.asset(SvgImages.facebook),
                     onPressed: () {}
                 ),
+                buildSocialButton(
+                    child: SvgPicture.asset(SvgImages.google),
+                    onPressed: () {}
+                ),
+                buildSocialButton(
+                    child: SvgPicture.asset(SvgImages.x),
+                    onPressed: () {}
+                ),
               ],
             ),
-          )
+          ),
+          Container(
+            margin: EdgeInsets.all(20.0),
+            child: MaterialButton(
+              onPressed: () {},
+              color: AppColors.baseGrey10Color,
+              height: 55,
+              elevation: 0,
+              child: Center(
+                child: Text(
+                  "Sign up",
+                  style: SignupScreenStyle.signUpTextStyle,
+                ),
+              ),
+            ),
+          ),
         ],
       ),
     );
