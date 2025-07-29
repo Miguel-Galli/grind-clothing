@@ -6,6 +6,7 @@ class SignupScreenStyle{
 
   static const TextStyle signInAgressStyle = TextStyle(
     color: AppColors.baseBlackColor,
+    fontFamily: "NovaFlat",
     fontSize: 16,
   );
 
