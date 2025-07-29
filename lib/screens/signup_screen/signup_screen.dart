@@ -86,7 +86,7 @@ class SignupScreen extends StatelessWidget {
   }
 
   Widget buildBottomPart(){
-    return Container(
+    return SizedBox(
       height: 300,
       child: Column(
         mainAxisAlignment: MainAxisAlignment.end,
@@ -141,6 +141,10 @@ class SignupScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        backgroundColor: Colors.transparent,
+        elevation: 0,
+      ),
       body: SafeArea(
           child: ListView(
             physics: BouncingScrollPhysics(),

@@ -5,7 +5,9 @@ import 'package:ecommerce_app/widgets/my_textfromfield_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
+import '../../routes/routes.dart';
 import '../../svg_images/svg_images.dart';
+import '../signup_screen/signup_screen.dart';
 
 class LoginScreen extends StatefulWidget {
   const LoginScreen({super.key});
@@ -16,7 +18,7 @@ class LoginScreen extends StatefulWidget {
 
 class _LoginScreenState extends State<LoginScreen> {
 
-  Widget buildTopPart() {
+  Widget buildTopPart({required BuildContext context}) {
     return Column(
       children: [
         Image.asset(
@@ -48,7 +50,12 @@ class _LoginScreenState extends State<LoginScreen> {
                   child: MyButtonWidget(
                       text: "Sign up",
                       color: AppColors.baseGreenMilitaryColor,
-                      onPress: (){}
+                      onPress: (){
+                        PageRouting.goToNextPage(
+                          context: context,
+                          navigateTo: SignupScreen(),
+                        );
+                      }
                   )
               )
             ],
@@ -130,7 +137,7 @@ class _LoginScreenState extends State<LoginScreen> {
                 Column(
                   crossAxisAlignment: CrossAxisAlignment.stretch,
                   children: [
-                    buildTopPart(),
+                    buildTopPart(context: context),
                     buildBottomPart(),
                   ],
                 )

@@ -1,5 +1,5 @@
+import 'package:ecommerce_app/app_colors/app_colors.dart';
 import 'package:ecommerce_app/screens/login_screen/login_screen.dart';
-import 'package:ecommerce_app/screens/signup_screen/signup_screen.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -15,6 +15,11 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(
+        appBarTheme: AppBarTheme(
+          iconTheme: IconThemeData(
+            color: AppColors.baseGreenMilitaryColor
+          ),
+        ),
         // This is the theme of your application.
         //
         // TRY THIS: Try running your application with "flutter run". You'll see
@@ -32,7 +37,7 @@ class MyApp extends StatelessWidget {
         // tested with just a hot reload.
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
       ),
-      home: const SignupScreen(),
+      home: const LoginScreen(),
     );
   }
 }
